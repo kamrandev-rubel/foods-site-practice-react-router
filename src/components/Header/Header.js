@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
-        <div className='bg-indigo-500 h-20 flex items-center'>
+        <header className=' bg-indigo-500 h-20 flex items-center'>
             <div className='flex justify-between items-center w-10/12 mx-auto text-white font-semibold'>
                 <div className='text-3xl cursor-pointer hover:text-yellow-500'>
                     LOGO
@@ -15,7 +15,7 @@ const Header = () => {
                     <Link className='ml-5 hover:text-yellow-500' to="/contact">Contact</Link>
                 </ul>
             </div>
-        </div>
+        </header>
     );
 };
 

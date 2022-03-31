@@ -3,7 +3,7 @@ import Restaurant from '../Restaurant/Restaurant';
 
 const Home = () => {
     return (
-        <div>
+        <div className='min-h-[100vh]'>
             <Restaurant/>
         </div>
     );

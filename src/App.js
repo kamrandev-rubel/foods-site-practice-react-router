@@ -7,6 +7,7 @@ import Contact from './components/Contact/Contact';
 import Home from './components/Home/Home';
 import NotFound from './components/NotFound/NotFound';
 import FoodDetails from './components/FoodDetails/FoodDetails';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path='/food/:foodId' element={<FoodDetails/>} />
         <Route path='*' element={<NotFound/>} />
       </Routes>
+      <Footer />
     </div>
   );
 }

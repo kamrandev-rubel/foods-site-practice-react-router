@@ -10,7 +10,7 @@ const Categories = () => {
     }, [])
     return (
         <div>
-            <div className='grid grid-cols-2 gap-4 mt-10'>
+            <div className='grid grid-cols-2 gap-4 mt-10 min-h-[100vh]'>
                 {
                     foodsCategories.map(food =>
                         <Categorie
