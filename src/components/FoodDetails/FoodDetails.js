@@ -10,7 +10,7 @@ const FoodDetails = () => {
             .then(data => setFood(data.meals))
     }, [])
     return (
-        <div>
+        <div className=' min-h-[100vh]'>
             <div className="mx-auto mt-10 flex flex-col items-center bg-white text-gray-900 rounded-lg border shadow-md md:flex-row md:max-w-5xl hover:bg-gray-200 hover:text-gray-900 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
                 <img className="object-cover w-full h-4/5 rounded-t-lg md:h-auto md:w-96 md:rounded-none md:rounded-l-lg" src={food[0]?.strMealThumb} alt=""/>
                 <div className="flex flex-col justify-between p-4 leading-normal">
