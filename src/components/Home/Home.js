@@ -3,7 +3,7 @@ import Restaurant from '../Restaurant/Restaurant';
 
 const Home = () => {
     return (
-        <div className='min-h-[100vh]'>
+        <div className='min-h-[100vh] mx-auto'>
             <Restaurant/>
         </div>
     );

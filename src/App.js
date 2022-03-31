@@ -11,7 +11,7 @@ import Footer from './components/Footer/Footer';
 
 function App() {
   return (
-    <div>
+    <div className='text-center'>
       <Header />
       <Routes>
         <Route path='/' element={<Home />} />
