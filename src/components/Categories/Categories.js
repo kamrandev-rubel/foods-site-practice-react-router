@@ -1,9 +1,24 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import Categorie from '../Categorie/Categorie';
 
 const Categories = () => {
+    const [foodsCategories, setFoodsCategories] = useState([])
+    useEffect(() => {
+        fetch('https://www.themealdb.com/api/json/v1/1/categories.php')
+            .then(res => res.json())
+            .then(data => setFoodsCategories(data.categories))
+    }, [])
     return (
         <div>
-            <h1>Categories page</h1>
+            <div className='grid grid-cols-2 gap-4 mt-10'>
+                {
+                    foodsCategories.map(food =>
+                        <Categorie
+                            key={food.idCategory}
+                            food={food}
+                        />)
+                }
+            </div>
         </div>
     );
 };
