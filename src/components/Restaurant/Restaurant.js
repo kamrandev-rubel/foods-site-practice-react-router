@@ -19,6 +19,7 @@ const Restaurant = () => {
                 }
             })
     }, [inputValue])
+
     
     
     return (
@@ -28,7 +29,12 @@ const Restaurant = () => {
             
             <dir className='grid gap-4 grid-cols-3'>
                 {
-                    foods.map(food => <Food key={food.idMeal} food={food} />)
+                    foods.map(food =>
+                        <Food
+                            // foodDetailsHandler={foodDetailsHandler}
+                            key={food.idMeal}
+                            food={food}
+                        />)
                 }
             </dir>
         </div>
