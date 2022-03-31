@@ -9,7 +9,7 @@ const Food = ({ food }) => {
         navigate(`/food/${food.idMeal}`)
     }
     return (
-        <div className="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-900">
+        <div className="max-w-sm mx-auto bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-900">
                 <img className="rounded-t-lg" src={strMealThumb} alt=""/>
             <div className="p-5">
                 <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{strMeal}</h5>
